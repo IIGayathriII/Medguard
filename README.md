@@ -121,6 +121,7 @@ Open a new terminal
 cd frontend
 cd my-app
 npm install
+npm i clsx lucide-react axios
 npm run dev
 
 ```
