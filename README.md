@@ -105,7 +105,7 @@ GEMINI_API_KEY=your_gemini_api_key_here
 
 ```bash
 cd backend
- uvicorn main:app --reload  
+uvicorn main:app --reload  
 
 ```
    
@@ -174,12 +174,12 @@ All 5 Symptoms Collected?
 
 ## 📝 Example Usage
 
-### Via Streamlit App
-1. Start the app: 
-cd backend
-uvicorn main:app --reload
-cd frontend
-npm run dev
+### Via Next.js and FastAPI
+1. Start the app
+- cd frontend 
+- npm run dev
+- cd backend 
+- uvicorn main:app --reload
 2. Chat with the AI to describe your symptoms
 3. Model automatically predicts disease when ready
 4. View confidence scores and probability distributions
