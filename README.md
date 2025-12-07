@@ -100,11 +100,6 @@ Create a `.env` file in the project root:
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
-Or configure Streamlit secrets at `.streamlit/secrets.toml`:
-```toml
-GEMINI_API_KEY = "your_gemini_api_key_here"
-```
-
 5. **Running the Application**
 
 
