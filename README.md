@@ -175,7 +175,11 @@ All 5 Symptoms Collected?
 ## 📝 Example Usage
 
 ### Via Streamlit App
-1. Start the app: `streamlit run app.py`
+1. Start the app: 
+cd backend
+uvicorn main:app --reload
+cd frontend
+npm run dev
 2. Chat with the AI to describe your symptoms
 3. Model automatically predicts disease when ready
 4. View confidence scores and probability distributions
@@ -221,7 +225,6 @@ See `requirements.txt` for complete list:
 - `pandas`: Data manipulation
 - `numpy`: Numerical computing
 - `scikit-learn`: Machine learning (Naive Bayes)
-- `streamlit`: Web interface
 - `google-generativeai`: Gemini API
 - `matplotlib`, `seaborn`: Visualization
 - `plotly`: Interactive charts
@@ -238,16 +241,13 @@ See `requirements.txt` for complete list:
 
 ### Gemini API Errors
 - Verify API key is correct and active
-- Check `.env` or Streamlit secrets configuration
+- Check `.env` 
 - Ensure sufficient API quota
 
 ### Model Loading Issues
 - Confirm `bayesian_disease_model.pkl` exists in `saved_models/`
 - Retrain model if file is corrupted: Run `bayesian_5000.ipynb`
 
-### Streamlit Connection Issues
-- Clear cache: `streamlit cache clear`
-- Restart server: Stop and run `streamlit run app.py` again
 
 ## 📚 References
 
